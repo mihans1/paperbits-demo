@@ -1,0 +1,15 @@
+<div class="editor row-layout-selector">
+    <div class="flex flex-row">
+        <h1>
+            Add row
+        </h1>
+        <hr />
+
+        <!-- ko foreach: rowConfigs -->
+        <div class="row-cfg" data-bind="foreach: $data, click: $component.selectRowLayout">
+            <div class="col-cfg" data-bind="columnSizeCfg: $data">
+            </div>
+        </div>
+        <!-- /ko -->
+    </div>
+</div>
